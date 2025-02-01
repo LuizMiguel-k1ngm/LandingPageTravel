@@ -1,47 +1,107 @@
-body {
-  background-image: url(ibagens/pexels-simon73-688660.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
+* {
+  padding: 0;
+  margin: 0;
+}
+
+div {
+  display: grid;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  grid-template-areas:
+    "header header header header"
+    "aside aside aside main"
+    "footer footer footer footer";
+  gap: 10px;
+  background-color: #413939;
 }
 
 .video {
-  height: 500px;
-  width: 500px;
+  display: grid;
 }
-.container {
-  background-color: yellow;
-  margin: 50px;
-  height: 100vh;
+
+header {
+  grid-area: header;
+  background-color: #d6d3d3;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(0, 0, 0);
+  background-image: url(thumb\ landing\ page.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-h1 {
-  background-color: beige;
-  height: 100px;
-  display: flex;
+
+aside {
+  display: grid;
+  grid-area: aside;
+  /* background-color: #030303;*/
   align-items: center;
   justify-content: center;
 }
-
-.topo {
-  background-color: bisque;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
+section {
+  grid-area: section;
+  /* background-color: rgb(255, 255, 255);*/
 }
 
-a {
-  height: 100px;
-  display: flex;
-  /* background-color: aquamarine;*/
-  font-size: 25px;
-  justify-content: space-around 10px;
+footer {
+  grid-area: footer;
+  /* background-color: rgb(255, 255, 255);*/
 }
 
-.meio {
-  width: 100%;
-  height: 300px;
-  align-items: end;
-  background-color: aqua;
-  display: flex;
+main {
+  grid-area: main;
+  background-color: #d6d3d3;
+  display: grid;
   align-items: center;
+  justify-content: center;
+  background-image: url(Flag_of_Canada_\(Pantone\).svg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+aside > p {
+  justify-content: center;
+  margin: 0 400px;
+  box-sizing: border-box;
+  font: bold;
+  font-size: 18px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(0, 0, 0);
+  backdrop-filter: blur(5px);
+}
+
+aside > h1 {
+  display: flex;
+  color: rgb(0, 0, 0);
+  font: bold;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+}
+
+footer {
+  background-image: url(pexels-simon73-688660.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer > a {
+  display: inline-block;
+  padding: 0 80px;
+  color: white;
+  justify-content: center;
+  display: inline-block;
+  font: bolder;
+  font-size: 18px;
+  box-shadow: 1px 1px solid black;
+  text-decoration: none;
+  backdrop-filter: BLUR(2px);
+}
+
+aside {
+  background-image: url(thumb\ landing\ page.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
